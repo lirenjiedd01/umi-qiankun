@@ -19,6 +19,13 @@
     "node": ">=8.0.0"
   },
   "scripts": {
+    "examples:install": "npm-run-all --serial build install:*",
+    "install:app1": "cd examples/app1 && yarn",
+    "install:app2": "cd examples/app2 && yarn",
+    "install:app3": "cd examples/app3 && yarn",
+    "install:backstage": "cd examples/backstage && yarn",
+    "install:master": "cd examples/master && yarn",
+    "install:zhilan": "cd examples/zhilan && yarn",
     "start": "npm-run-all --parallel start:*",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "lint": "npm run lint:js && npm run lint:prettier && npm test",
@@ -59,7 +66,6 @@
     "concurrently": "^4.1.2",
     "coveralls": "3",
     "father-build": "^1.2.0",
-    "husky": "1",
     "lint-staged": "8",
     "mockjs": "^1.0.1-beta3",
     "np": "5",
@@ -70,12 +76,6 @@
     "umi-request": "^1.1.0",
     "umi-test": "^1.8.2",
     "umi-types": "^0.5.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "npm test"
-    }
   },
   "lint-staged": {
     "**/*.{js,ts,json,css,md}": [
