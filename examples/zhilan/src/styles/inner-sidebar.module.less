@@ -1,0 +1,140 @@
+@import '~antd/es/style/themes/default.less';
+
+.form {
+  :global {
+    .ant-form-inline .ant-form-item {
+      margin-right: 0;
+    }
+
+    .ant-row.ant-form-item {
+      .ant-select-selector {
+        border-right-width: 0;
+        border-radius: 0;
+
+        &:hover {
+          border-right-width: 1px;
+        }
+      }
+
+      .ant-select-focused.ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+        z-index: 2;
+      }
+    }
+
+    .ant-input {
+      width: 200px;
+      border-radius: 0;
+    }
+    .ant-btn-sm{
+      padding: 0 15px 4px 15px;
+      color: #fff;
+      font-size: 12px;
+      background-color:rgb(90, 166, 255);
+      border-color: rgb(90, 166, 255);
+      border-radius: 0 6px 6px 0;
+    }
+  }
+}
+
+.groupWrap {
+  position: fixed;
+  flex-shrink: 0;
+  width: 210px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px 0 rgba(133,164,209,.17);
+}
+
+.tagGroup {
+  :global {
+    .ant-tree-switcher.ant-tree-switcher-noop {
+      display: none;
+    }
+  }
+}
+
+.table {
+  display: flex;
+  flex-direction: row;
+
+  .tableContent {
+    flex: 1;
+    width: 100%;
+    margin-left: 24px;
+    padding-left: 210px;
+
+    :global {
+      tr > th {
+        padding: 16px;
+      }
+      .ant-card{
+        box-shadow: 0 2px 8px 0 rgba(133,164,209,.17);
+      }
+    }
+
+    // :global {
+
+    //   .ant-table-thead>tr>th,
+    //   .ant-table-tbody>tr>td,
+    //   .ant-table tfoot>tr>th,
+    //   .ant-table tfoot>tr>td {
+    //     padding: 16px 0;
+    //   }
+    // }
+  }
+
+  .antdTable {
+    width: 100%;
+
+    :global {
+      .ant-empty {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-height: 470px;
+        margin: 0;
+      }
+    }
+  }
+
+  :global {
+    .ant-btn,
+    .ant-table-title {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
+  .tableSelect {
+    width: 120px;
+    color: @primary-color;
+
+    :global {
+      .ant-select-arrow {
+        color: @primary-color;
+      }
+
+      .ant-select-selector {
+        padding-left: 0 !important;
+      }
+    }
+  }
+}
+
+.tooltipIcon {
+  margin-left: 6px;
+  font-size: 12px;
+
+  &:hover {
+    color: @primary-color;
+  }
+}
+
+.enumList {
+  font-size: 14px;
+}
+
+.enumItem {
+  line-height: 22px;
+}

@@ -1,0 +1,86 @@
+@import '~antd/es/style/themes/default.less';
+:global{
+  form .has-feedback :not(.ant-input-group-addon) > .ant-select .ant-select-arrow{
+    right: 11px;
+    color: rgba(0, 0, 0, 0.25);
+  }
+}
+.login {
+  :global{
+    .has-error .ant-input-affix-wrapper{
+      border-color: #d2dbe8 !important;
+    }
+    .ant-legacy-form-item{
+      margin-bottom: 24px !important;
+    }
+    .ant-legacy-form-explain{
+      position: absolute;
+    }
+  }
+  .mobilePrefix{
+    display: inline-block;
+    :global{
+      .ant-select{
+        width: 100% !important;
+        .ant-select-selector{
+          border-radius: 6px 0 0 6px !important;
+        }
+      }
+      .ant-select-focused.ant-select-single:not(.ant-select-customize-input) .ant-select-selector{
+        position: relative;
+        z-index: 2;
+        background: transparent;
+      }
+    }
+  }
+  .getCaptcha {
+    display: block;
+    width: 100%;
+    background: none !important;
+    border: none;
+    font-size: 14px;
+    
+    font-weight: bold;
+    padding:0 6px;
+    height: 32px;
+  }
+  .getCaptcha:hover{
+    background: #E5F1FF !important;
+    color: #5AA6FF !important;
+  }
+
+  .icon {
+    margin-left: 16px;
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+      color: @primary-color;
+    }
+  }
+
+  .other {
+    margin-top: 24px;
+    line-height: 22px;
+    text-align: left;
+
+    .register {
+      float: right;
+    }
+  }
+
+  .prefixIcon {
+    color: @disabled-color;
+    font-size: @font-size-base;
+  }
+
+  .submit {
+    width: 100%;
+  }
+  .FormItem{
+    margin-top: 30px;
+  }
+}

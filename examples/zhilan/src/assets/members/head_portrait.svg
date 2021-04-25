@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="101px" height="101px" viewBox="0 0 101 101" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>head portrait</title>
+    <g id="SCRM_组件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="组件" transform="translate(-1056.000000, -382.000000)">
+            <g id="head-portrait" transform="translate(1056.700000, 382.500000)">
+                <circle id="椭圆形备份" stroke="#5AA6FF" fill="#E5F1FF" cx="50" cy="50" r="49.5"></circle>
+                <g id="编组-14" transform="translate(16.000000, 18.310921)" fill="#FFFFFF">
+                    <path d="M34.0316578,39.0275372 C52.8093393,39.0275372 68.0316578,51.1158489 68.0316578,66.0275372 C68.0316578,66.4260798 68.0207841,66.8226056 67.9992595,67.2169378 C59.0810529,75.4786346 47.1459725,80.5275372 34.0316578,80.5275372 C20.9171021,80.5275372 8.98182419,75.4784492 0.0636745303,67.2181237 C0.0425314502,66.8226056 0.031657765,66.4260798 0.031657765,66.0275372 C0.031657765,51.1158489 15.2539763,39.0275372 34.0316578,39.0275372 Z" id="路径"></path>
+                    <circle id="椭圆形" cx="34" cy="18.6706865" r="18.3350755"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

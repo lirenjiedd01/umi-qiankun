@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="28px" viewBox="0 0 29 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>素材管理_hover</title>
+    <g id="V0.6.1.2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="应用中心_微信应用配置_图文素材" transform="translate(-240.000000, -221.000000)">
+            <g id="编组-14" transform="translate(220.000000, 212.000000)">
+                <g id="编组-12" transform="translate(9.882214, 9.000000)">
+                    <g id="素材管理_hover" transform="translate(11.000000, 0.000000)">
+                        <circle id="椭圆形" fill="#E5F1FF" cx="14" cy="14" r="14"></circle>
+                        <g id="编组-4" transform="translate(6.781397, 7.000000)" stroke="#5AA6FF">
+                            <path d="M6.00209308,0.5 L7.66915641,2.03191343 C7.95241438,2.33074494 8.3460578,2.5 8.75780451,2.5 L8.75780451,2.5 L13.3363894,2.5 L13.8363894,13 L1.33638938,13.5 L0.83638938,1 L6.00209308,0.5 Z" id="矩形"></path>
+                            <path d="M15.1165855,4.5 L14.0068758,13.0980581 L1.26056988,13.5 L2.64279372,4.88624408 L15.1165855,4.5 Z" id="矩形" fill="#FFFFFF"></path>
+                            <rect id="矩形" x="7.83638938" y="11.5" width="4" height="1" rx="0.5"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

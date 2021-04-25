@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon5</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="20" height="20" rx="4"></rect>
+        <filter x="-20.0%" y="-20.0%" width="150.0%" height="150.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.532031591   0 0 0 0 0.604734905   0 0 0 0 0.750141531  0 0 0 0.3105059 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="SCRM_V0.3.0.1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="添加营销策略_8" transform="translate(-644.000000, -344.000000)">
+            <g id="icon5" transform="translate(646.000000, 346.000000)">
+                <g id="Mask">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <rect stroke="#5AA6FF" stroke-width="1" stroke-linejoin="square" fill="#FFFFFF" fill-rule="evenodd" x="0.5" y="0.5" width="19" height="19" rx="4"></rect>
+                </g>
+                <g id="Group-54" transform="translate(3.750000, 3.750000)" fill="#5AA6FF" fill-rule="nonzero">
+                    <g id="plus">
+                        <path d="M10.6423944,5.59372242 L6.52740729,5.59372242 L6.52740729,1.54019761 C6.52740729,1.28040649 6.31939696,1.07022372 6.06229102,1.07022372 C5.80518507,1.07022372 5.59717474,1.28040649 5.59717474,1.54019761 L5.59717474,5.59372242 L1.57262693,5.59372242 C1.31552099,5.59372242 1.10751065,5.80390518 1.10751065,6.06369631 C1.10751065,6.32348743 1.31552099,6.5336702 1.57262693,6.5336702 L5.59717474,6.5336702 L5.59717474,10.6002498 C5.59717474,10.860041 5.80518507,11.0702237 6.06229102,11.0702237 C6.31939696,11.0702237 6.52740729,10.860041 6.52740729,10.6002498 L6.52740729,6.5336702 L10.6423944,6.5336702 C10.8995003,6.5336702 11.1075107,6.32348743 11.1075107,6.06369631 C11.1075107,5.80390518 10.8995003,5.59372242 10.6423944,5.59372242 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

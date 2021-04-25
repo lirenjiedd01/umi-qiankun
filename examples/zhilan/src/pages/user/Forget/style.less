@@ -1,0 +1,150 @@
+@import "~antd/es/style/themes/default.less";
+
+.main {
+  width: 368px;
+  margin: 0 auto;
+  
+  .mobile{
+    border-radius: 0 6px 6px 0 !important;
+  }
+  .rebind_tit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+    color: #1A447F;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 35px;
+  
+    &::before, &::after {
+      content: '';
+      width: 16px;
+      height: 1px;
+      background: #d8d8d8;
+    }
+  
+    &::before {
+      margin-right: 10px;
+    }
+  
+    &::after {
+      margin-left: 10px;
+    }
+  }
+
+  :global {
+    .ant-form-item {
+      margin-bottom: 24px;
+    }
+
+    .ant-col {
+      width: 100%;
+    }
+
+    form .has-feedback > .ant-select .ant-select-arrow,
+    form .has-feedback > .ant-select .ant-select-selection__clear,
+    form
+      .has-feedback
+      :not(.ant-input-group-addon)
+      > .ant-select
+      .ant-select-arrow {
+      right: 11px;
+    }
+    .has-error .ant-select-arrow {
+      color: rgba(0, 0, 0, 0.25);
+    }
+
+    .ant-select-selection.ant-select-selection--single {
+      background-color: rgb(245, 245, 245);
+    }
+
+    .ant-select-selector{
+      border-radius: 6px 0 0 6px !important;
+    }
+
+    .ant-input,.ant-select-selector{
+      height: 32px !important;
+      border: 1px solid #D2DBE8;
+      line-height: 32px !important;
+      font-size: 14px;
+      color: rgba(26, 68, 127, 0.85);
+      font-weight: 400;
+    }
+    .ant-select-selection-item{
+      line-height: 28px !important;
+    }
+
+    .ant-input::placeholder{
+      color: rgba(26, 68, 127, 0.25);
+      font-size: 14px;
+    }
+
+    .ant-legacy-form-item{
+      margin-bottom: 20px !important;
+    }
+    .ant-row{
+      align-items: flex-start;
+    }
+
+  }
+
+  .regi {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.85);
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .getCaptcha {
+    display: block;
+    // width: 100%;
+    background: none !important;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding:0 6px;
+    height: 32px;
+    margin-top: 5px;
+  }
+  .getCaptcha:hover{
+    background: #E5F1FF !important;
+    color: #5AA6FF !important;
+  }
+
+  .submit {
+    width: 100%;
+  }
+
+  .login {
+    line-height: @btn-height-lg;
+    color: #5AA6FF;;
+  }
+}
+
+.success,
+.warning,
+.error {
+  transition: color 0.3s;
+}
+
+.success {
+  color: @success-color;
+}
+
+.warning {
+  color: @warning-color;
+}
+
+.error {
+  color: @error-color;
+}
+
+.progress-pass > .progress {
+  :global {
+    .ant-progress-bg {
+      background-color: @warning-color;
+    }
+  }
+}

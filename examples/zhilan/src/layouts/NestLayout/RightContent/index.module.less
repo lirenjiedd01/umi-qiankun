@@ -1,0 +1,202 @@
+@import '~antd/es/style/themes/default.less';
+
+@pro-header-hover-bg: rgba(0, 0, 0, 0.025);
+
+.container>* {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: @shadow-1-down;
+}
+
+.menu {
+  :global(.anticon) {
+    margin-right: 8px;
+  }
+
+  :global(.ant-dropdown-menu-item) {
+    min-width: 160px;
+  }
+}
+
+.dropDown {
+  line-height: @layout-header-height;
+  vertical-align: top;
+  cursor: pointer;
+  > i {
+    font-size: 16px !important;
+    transform: none !important;
+    svg {
+      position: relative;
+      top: -1px;
+    }
+  }
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: @layout-header-height;
+  margin-left: auto;
+  overflow: hidden;
+
+  .action {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    >span {
+      color: @text-color;
+      vertical-align: middle;
+    }
+
+    &:hover {
+      background: @pro-header-hover-bg;
+    }
+
+    &:global(.opened) {
+      background: @pro-header-hover-bg;
+    }
+  }
+
+  .account {
+    .avatar {
+      margin:~'calc((@{layout-header-height} - 24px) / 2)'0;
+      margin-right: 8px;
+      color: @primary-color;
+      vertical-align: top;
+      background: rgba(255, 255, 255, 0.85);
+    }
+  }
+}
+
+:global(.ant-pro-global-header) {
+  .dark {
+    .action {
+      color: @text-color;
+
+      >span {
+        color: @text-color;
+      }
+
+      &:hover {
+        color: rgba(255, 255, 255, 0.85);
+
+        >span {
+          color: rgba(255, 255, 255, 0.85);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: @screen-md) {
+  :global(.ant-divider-vertical) {
+    vertical-align: unset;
+  }
+
+  .name {
+    display: none;
+  }
+
+  .right {
+    position: absolute;
+    top: 0;
+    right: 12px;
+
+    .account {
+      .avatar {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: @screen-xs) {
+  .container {
+    width: 100% !important;
+  }
+
+  .container>* {
+    border-radius: 0 !important;
+  }
+}
+
+.switchForm{
+  :global{
+    .ant-select{
+      width: 204px;
+      margin-bottom: 10px;
+    }
+  }
+  .switchFormFooter{
+    text-align: right;
+    :global{
+      .ant-btn{
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.nodataContainer{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 200px;
+  padding: 5px 0;
+  .nodata{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url(../../../assets/nodata@2x.png);
+    background-size: 100% 100%;
+    margin-bottom: 5px;
+ }
+}
+
+
+.swicthSpaceBtn{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 20px;
+  padding-right: 20px;
+  position: relative;
+  cursor: pointer;
+  color: fade(#1A447F, 95%);
+  height: 64px;
+  .switchIcon{
+     width: 20px;
+     height: 20px;
+     border-radius: 20px;
+     background-color: #D2DBE8;
+     color: #ffffff;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-left: 10px;
+     transition: .3s;
+  }
+}
+.swicthSpaceBtn::after{
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 15px;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: fade(#000000, 9%);
+}
+.swicthSpaceBtn:hover{
+  .switchIcon{
+    background-color: #5AA6FF;
+  }
+}

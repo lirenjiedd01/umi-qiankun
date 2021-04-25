@@ -1,0 +1,77 @@
+.registerResult {
+  .rebind_tit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+    color: #1A447F;
+    font-size: 18px;
+    font-weight: bold;
+  
+    &::before, &::after {
+      content: '';
+      width: 16px;
+      height: 1px;
+      background: #d8d8d8;
+    }
+  
+    &::before {
+      margin-right: 10px;
+    }
+  
+    &::after {
+      margin-left: 10px;
+    }
+  }
+  .content{
+    width: 368px;
+    padding: 50px 0;
+    margin: 0 auto;
+    background: none;
+  }
+  :global {
+    .anticon {
+      font-size: 64px;
+    }
+    .ant-btn-lg{
+      padding:0 30px;
+    }
+    form .has-feedback :not(.ant-input-group-addon) > .ant-select .ant-select-arrow{
+      right: 11px;
+    }
+  }
+  .title {
+    margin-top: 32px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .regSucc{
+    font-size:24px;
+    font-weight:500;
+    color: rgba(26, 68, 127, 0.95);
+    line-height:50px;
+    font-weight: bold;
+  }
+  .accountBox{
+    font-size: 14px;
+    color: rgba(26, 68, 127, 0.95);
+    margin: 50px 0 80px 0;
+     > span{
+        font-weight: bold;
+     }
+  }
+  .actions {
+    margin-top: 40px;
+    :global{
+      .ant-btn{
+        width: 342px;
+        height: 40px;
+        background: #5AA6FF;
+  
+      }
+    }
+    a + a {
+      margin-left: 8px;
+    }
+  }
+}

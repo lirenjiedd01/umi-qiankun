@@ -1,0 +1,158 @@
+@import '../../components/NewSearch/style.less';
+
+.LoginSpaceContainer{
+    text-align: center;
+    
+    .searchHeader{
+       float: none;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       padding: 70px 0;
+       > p {
+           font-size: 18px;
+           font-weight: 600;
+           color: fade(#1A447F, 95%);
+           margin-bottom: 40px;
+       }
+    }
+    .CarouselContainer{
+        position: relative;
+        width: 1000px;
+        min-height: 400px;
+        margin: 0 auto 40px auto;
+        :global{
+            .slick-list{
+                padding: 20px;
+            }
+        }
+        .prevBtn,.nextBtn{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 100;
+            background: #ffffff;
+            width: 40px;
+            height: 40px;
+            border-radius: 40px;
+            box-shadow: 0px 2px 8px 0px rgba(171,199,255,0.2);
+            cursor: pointer;
+            .prevIcon,.nextIcon{
+                display: inline-block;
+                width: 50px;
+                height: 50px;
+                background-size: 50px 50px;
+            }
+        }
+        .prevBtn{
+            left: -100px;
+            .prevIcon{
+                background-image: url(../../assets/login/prev.svg);
+                margin-top: -3px;
+                margin-left: -5px;
+            }
+            .prevIcon_disabeld{
+                background-image: url(../../assets/login/next_disabled.svg);
+                transform: rotate(-180deg);
+                margin-top: -6px;
+            }
+        }
+        .nextBtn{
+            right:-100px;
+            .nextIcon{
+                background-image: url(../../assets/login/prev.svg);
+                transform: rotate(180deg);
+                margin-top: -6px;
+                margin-left: -5px;
+            }
+            .nextIcon_disabeld{
+                background-image: url(../../assets/login/next_disabled.svg);
+                transform: rotate(0deg);
+                margin-top: -3px;
+            }
+        }
+        .spaceItemContainer{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;  
+            flex-wrap: wrap;
+            .spaceItem{
+                width: 160px;
+                height: 160px;
+                margin: 0 40px 40px 0;
+                background: #ffffff;
+                border-radius: 10px;
+                box-shadow: 0px 2px 8px 0px rgba(171,199,255,0.2); 
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                font-size: 14px;
+                color: fade(#1A447F, 85%);
+                cursor: pointer;
+                transition: .1s;
+                > div {
+                    margin: 10px 0;
+                }
+            }
+            .spaceItem:hover{
+                border: 2px solid #5aa6ff;
+                box-shadow: 0px 5px 20px -1px rgba(90,166,255,0.52); 
+                font-size: 16px;
+                color: #5AA6FF;
+            }
+            .selected{
+                border: 2px solid #5aa6ff;
+                box-shadow: 0px 5px 20px -1px rgba(90,166,255,0.52); 
+                font-size: 16px;
+                color: #5AA6FF;
+            }
+            .spaceItem:nth-child(5n){
+                margin-right: 0;
+            }
+        }
+    }
+    .flexCenter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .spaceNameInput{
+        width: 331px;
+        border-radius: 6px 0 0 6px !important;
+    }
+
+    .NoSpacesContainer{
+       height: 100vh;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       .noSpacesBox{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            > h3 {
+                font-size: 18px;
+                font-weight: bold;
+                color: fade(#1A447F, 95%);
+                margin-bottom: 26px
+            }
+            > img {
+                width: 430px;
+                height: 180px;
+                margin-bottom: 48px;
+            }
+             
+       }
+    }
+}
+
+.loading{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}

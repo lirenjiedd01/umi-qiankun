@@ -1,0 +1,16 @@
+export default {
+  'login.accountSecretLogin': "アカウント登録",
+  'login.accountPlaceholder': "アカウント",
+  'login.accountValify': "ユーザ名を入力してください",
+  'login.passwordPlaceHolder': "パスワード",
+  'login.passwordValify': "パスワードを入力してください",
+  'login.smsLogin': "SMSログイン",
+  'login.phonePlaceHolder': "11桁の携帯番号",
+  'login.mobilePhoneInput': '携帯番号を入力してください',
+  'login.getValifyCode': "認証コードを取得する",
+  'login.valifyCodeInput': "認証コードを入力する",
+  'login.login': "ログイン",
+  'login.autoLogin': "自動ログイン",
+  'login.forgetPassword': "パスワードを忘れます",
+  'login.goRegister': "登録に行きます",
+};
