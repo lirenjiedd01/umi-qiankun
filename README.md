@@ -1,9 +1,3 @@
-# Umi@2 plugin for [qiankun@v1](https://github.com/umijs/qiankun/tree/1.x).
-
-# Umi@3 相应的 qiankun 插件请移步[这里](https://github.com/umijs/plugins/tree/master/packages/plugin-qiankun)
-
-[![NPM version](https://img.shields.io/npm/v/@umijs/plugin-qiankun/umi2.svg?style=flat)](https://npmjs.org/package/@umijs/plugin-qiankun) [![Build Status](https://img.shields.io/travis/umijs/umi-plugin-qiankun.svg?style=flat)](https://travis-ci.org/umijs/umi-plugin-qiankun) [![NPM downloads](http://img.shields.io/npm/dm/@umijs/plugin-qiankun.svg?style=flat)](https://npmjs.org/package/@umijs/plugin-qiankun)
-
 ## Installation
 
 ```shell
@@ -36,6 +30,7 @@ $ yarn start
 - ✔︎ 父子应用通讯
 - ✔︎ 子应用运行时配置自定义 `bootstrap()`、`mount()` 和 `unmount()`
 - ✔︎ 主应用、子应用联调
+- ✔︎ 文件examples/zhilan(基于微前端搭建的后台管理系统目录)
 
 ## Usage
 
@@ -232,13 +227,6 @@ PORT=8081
 
 2. 子应用在生命周期钩子中获取 props 消费数据（参考子应用运行时配置一节）
 
-### 基于 Hooks 共享数据
-
-由于方案基于 react hook，所以只能在 functional component 中使用相关 api，无法在 class component 中使用。
-
-1. 约定父应用中在 `src/rootExports.js` 里 export 内容。参考 [rootExports](https://github.com/umijs/umi-plugin-qiankun/blob/master/examples/master/rootExports.js)
-2. 子应用中通过 `import { useRootExports } from 'umi'; const rootExports = useRootExports();` 取到。参考 [useRootExports](https ://github.com/umijs/umi-plugin-qiankun/blob/master/examples/app1/pages/index.js#L1)
-
 ## API
 
 ### <a name="masterOptions">MasterOptions</a>
@@ -269,30 +257,3 @@ PORT=8081
 | 配置 | 说明 | 类型 | 是否必填 | 默认值 |
 | --- | --- | --- | --- | --- |
 | keepOriginalRoutes | 子应用通过设置此配置，在编译时会按照 keepOriginalRoutes 的值添加一份 route 的快照(如果值为 true 将默认取 packageName)，并将快照路由前缀改为/\${keepOriginalRoutes}添加到 routes | boolean \| string | 否 | false |
-
-## Roadmap
-
-- [x] 支持 browserHistory
-- [x] master 运行时配置
-- [ ] 子应用嵌套
-- [ ] 公共依赖加载策略
-- [x] 子应用单独调试
-- [x] 基于 Hooks 的父子应用通讯（需强制 external React 保证一个 React 实例）
-
-## Questions & Suggestions
-
-Please open an issue [here](https://github.com/umijs/umi/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc).
-
-## Community
-
-https://github.com/umijs/umi#community
-
-## 相关
-
-- [RFC: 微前端（@umijs/plugin-qiankun） by sorrycc · Pull Request #3 · umijs/rfcs · GitHub](https://github.com/umijs/rfcs/pull/3)
-
-- [umi-example-monorepo](https://github.com/umijs/umi-example-monorepo) 之前尝试的另一种简单粗糙的微前端试验
-
-## LICENSE
-
-MIT
