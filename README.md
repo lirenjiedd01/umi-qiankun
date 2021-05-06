@@ -30,7 +30,7 @@ $ yarn start
 - ✔︎ 父子应用通讯
 - ✔︎ 子应用运行时配置自定义 `bootstrap()`、`mount()` 和 `unmount()`
 - ✔︎ 主应用、子应用联调
-- ✔︎ 文件examples/zhilan(基于微前端搭建的后台管理系统目录)
+- ✔︎ 文件examples/backstage(基于微前端搭建的后台管理系统目录)
 
 ## Usage
 
